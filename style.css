@@ -21,12 +21,11 @@ body {
     height: 552px;
     width: 315px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0, 0);
     border-radius: 20px;
     background-image: url(background.png);
-    background-size: cover;
-    background-position-x: -18px;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     overflow: hidden;
     box-shadow: 0 0 15px black;
 }
@@ -59,16 +58,17 @@ body {
     margin-right: 14px;
     border-radius: 10px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0, 0.2);
     background: #523e2e;
     box-shadow: inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    box-shadow: 1px 1px 4px #000000, -1px -1px 4px #000000;
     overflow: hidden;
 }
 
 .panel::before {
     content: "";
     position: absolute;
-    height: 110%;
+    height: 300%;
     width: 45.74px;
     border: solid;
     border-width: 1px;
@@ -81,7 +81,7 @@ body {
 .panel::after {
     content: "";
     position: absolute;
-    height: 110%;
+    height: 300%;
     width: 45.74px;
     border: solid;
     border-width: 1px;
