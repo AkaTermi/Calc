@@ -1,0 +1,94 @@
+body {
+    height: 95vh;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    background: linear-gradient(270deg, #00f2fe, #4facfe, #00f2fe, #4facfe);
+    background-size: 600% 600%;
+    animation: gradient-background 20s ease infinite;
+}
+
+@keyframes gradient-background {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#calc{
+    display: flex;
+    height: 552px;
+    width: 315px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+
+#top-content {
+    display: grid;
+    grid-template-rows: 73.6px 110.4px;
+    grid-template-columns: 94.5px 210.3px;
+    gap: 10px;
+}
+
+.top-box:nth-child(3) {
+    grid-column: 1 / 3;
+}
+
+.panel {
+    height: 80%;
+    width: 87%;
+    justify-self: end;
+    align-self: center;
+    margin-right: 14px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+.model-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    justify-self: start;
+    align-self: center;
+    margin-left: 13px;
+}
+
+.model-text p:nth-child(1) {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transform: scaleX(1.2);
+    translate: -3px -15px;
+    margin-left: 8px;
+    color: white;
+}
+
+.model-text p:nth-child(2) {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    translate: 0 -33px;
+    color: white;
+}
+
+.model-text p:nth-child(3) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    transform: scaleX(0.9);
+    translate: 0 -57px;
+    color: maroon;
+}
+
+.screen {
+    width: 290px;
+    height: 100%;
+    justify-self: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    translate: 0 -9px;
+}
