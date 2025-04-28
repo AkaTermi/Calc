@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Eurostile Extended;
+    font-family: Microgramma;
     src: url(Microgramma\ D\ Extended\ Bold.otf);
 }
 
@@ -122,7 +122,7 @@ body {
 }
 
 .model-text p:nth-child(1) {
-    font-family: Eurostile Extended;
+    font-family: Microgramma;
     letter-spacing: 1px;
     transform: scaleX(0.9);
     translate: -3px -12px;
