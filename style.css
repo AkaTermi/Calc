@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Eurostile Extended;
+    font-family: Microgramma;
     src: url(Microgramma\ D\ Extended\ Bold.otf);
 }
 
@@ -24,8 +24,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
-    width: 327px;
+    height: 650px;
+    width: 400px;
+    padding: 30px;
+    scale: 1.3;
 }
 
 .wrapper {
@@ -81,7 +83,12 @@ body {
     border-radius: 10px;
     border-style: solid;
     border-color: rgb(0, 0, 0, 0.2);
-    box-shadow: 1px 1px 4px #000000, -1px -1px 4px #000000;
+    /* box-shadow: 1px 1px 4px #000000, -1px -1px 4px #000000; */
+    box-shadow: 
+    1px 1px 2px 1px rgb(0, 0, 0, 0.7), 
+    -1px -1px 2px 1px rgb(0, 0, 0, 0.7),
+    1px 1px 1px 1px rgb(141, 141, 141, 0.5), 
+    -1px -1px 1px 1px rgb(141, 141, 141, 0.5);
     overflow: hidden;
 }
 
@@ -122,7 +129,7 @@ body {
 }
 
 .model-text p:nth-child(1) {
-    font-family: Eurostile Extended;
+    font-family: Microgramma;
     letter-spacing: 1px;
     transform: scaleX(0.9);
     translate: -3px -12px;
@@ -159,8 +166,82 @@ body {
     border-style: solid;
     border-color: rgb(113, 119, 107, 0.4);
     box-shadow: 
-         1px 1px 2px 5px rgb(0, 0, 0, 0.7), 
-        -1px -1px 2px 5px rgb(0, 0, 0, 0.7),
-         1px 1px 1px 5px rgb(141, 141, 141, 0.5), 
-        -1px -1px 1px 5px rgb(141, 141, 141, 0.5);
+    1px 1px 2px 5px rgb(0, 0, 0, 0.7), 
+    -1px -1px 2px 5px rgb(0, 0, 0, 0.7),
+    1px 1px 1px 5px rgb(141, 141, 141, 0.5), 
+    -1px -1px 1px 5px rgb(141, 141, 141, 0.5);
 }
+
+#bot-content {
+    position: relative;
+    top: 20px;
+    height: 330px;
+}
+
+.top-buttons {
+    position: absolute;
+    top: 27px;
+    left: 22px;
+    display: grid;
+    grid-template-areas: "shi alp space men on";
+    grid-template-columns: auto auto 125px auto auto;
+    gap: 15px;
+}
+
+.shift { 
+    grid-area: shi;
+    background-image: url(metal\ buttons.png);
+    background-size: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.alpha {
+    grid-area: alp;
+    background-image: url(metal\ buttons.png);
+    background-size: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    grid-area: men;
+    background-image: url(metal\ buttons.png);
+    background-size: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.on {
+    grid-area: on;
+    background-image: url(metal\ buttons.png);
+    background-size: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.steel {
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 
+    0px 0px 2px 3px rgb(0, 0, 0, 0.7), 
+    0px 0px 2px 3px rgb(0, 0, 0, 0.7),
+    0px 0px 1px 3px rgb(141, 141, 141, 0.5), 
+    0px 0px 1px 3px rgb(141, 141, 141, 0.5);
+    overflow: hidden;
+    cursor: pointer;
+    /* transition: all 0.01s ease; */
+}
+
+.steel:active {
+    background-size: 32px;
+    box-shadow: 
+    inset 2px 2px 6px rgba(0, 0, 0, 0.7),
+    0px 0px 2px 3px rgb(0, 0, 0, 0.7), 
+    0px 0px 2px 3px rgb(0, 0, 0, 0.7),
+    0px 0px 1px 3px rgb(141, 141, 141, 0.5), 
+    0px 0px 1px 3px rgb(141, 141, 141, 0.5);
+}
+
