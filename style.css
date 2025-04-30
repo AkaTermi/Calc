@@ -61,9 +61,6 @@ body {
     border-style: solid;
     border-color: rgb(0, 0, 0, 0);
     border-radius: 30px;
-    background-image: url(background.webp);
-    background-size: contain;
-    background-position: center;
     overflow: hidden;
     box-shadow: inset 0 0 2px rgb(0, 0, 0), inset 0 0 5px rgb(116, 116, 116), 0 0 2px black;
 }
@@ -254,34 +251,18 @@ body {
 
 .shift { 
     grid-area: shi;
-    background-image: url(metal\ buttons.webp);
-    background-size: 29px;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .alpha {
     grid-area: alp;
-    background-image: url(metal\ buttons.webp);
-    background-size: 29px;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .menu {
     grid-area: men;
-    background-image: url(metal\ buttons.webp);
-    background-size: 29px;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .on {
     grid-area: on;
-    background-image: url(metal\ buttons.webp);
-    background-size: 29px;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .steel {
