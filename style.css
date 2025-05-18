@@ -39,14 +39,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 650px;
+    height: 663px;
     width: 400px;
     padding: 30px;
     scale: 1.3;
 }
 
 .wrapper {
-    height: 510px;
+    height: 524px;
     width:  285px;
     background: white;
     border-radius: 45px;
@@ -56,8 +56,11 @@ body {
 
 #calc {
     position: absolute;
-    height: 552px;
+    height: 575px;
     width: 315px;
+    background-image: url(background.webp); 
+    background-size: contain;
+    background-position: center;
     border-style: solid;
     border-color: rgb(0, 0, 0, 0);
     border-radius: 30px;
@@ -171,7 +174,7 @@ body {
 
 .screen {
     width: 280px;
-    height: 100%;
+    height: 95px;
     justify-self: center;
     translate: 1px -5px;
     background: rgb(82, 87, 78);
@@ -204,7 +207,7 @@ body {
 
 .top-text {
     position: absolute;
-    top: 5px;
+    top: -18px;
     left: 24px;
     display: grid;
     grid-template-areas: "S A space M SE O";
@@ -241,33 +244,49 @@ body {
 
 .top-buttons {
     position: absolute;
-    top: 27px;
-    left: 22px;
+    top: 5px;
+    left: 23.5px;
     display: grid;
     grid-template-areas: "shi alp space men on";
-    grid-template-columns: auto auto 125px auto auto;
+    grid-template-columns: 22.5px auto 129px 22px auto;
     gap: 15px;
 }
 
 .shift { 
     grid-area: shi;
+    background-image: url(metal\ buttons.webp); 
+    background-size: 29px;
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 .alpha {
     grid-area: alp;
+    background-image: url(metal\ buttons.webp); 
+    background-size: 29px;
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 .menu {
     grid-area: men;
+    background-image: url(metal\ buttons.webp);
+    background-size: 29px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .on {
     grid-area: on;
+    background-image: url(metal\ buttons.webp); 
+    background-size: 29px;
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 .steel {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     border: none;
     border-radius: 50%;
     box-shadow: 
@@ -291,7 +310,7 @@ body {
 
 .bot-buttons {
     position: absolute;
-    bottom: 5px;
+    bottom: -16px;
     left: 17px;
     display: grid;
     grid-template-columns: 57px 57px 57px 57px auto;
@@ -310,9 +329,8 @@ body {
     user-select: none;
 }
 
-span {
+.bot-buttons span {
     display: inline-block;
-    transform: translateY(0px);
 }
 
 .deci span{
@@ -462,7 +480,7 @@ span {
     "rnd ran ranint pie e per sq";
     grid-template-columns: 35px 35px 35px 35px 35px 35px 35px;
     grid-template-rows: 20px 20px 20px 20px;
-    top: 136px;
+    top: 155px;
     left: 35px;
     row-gap: 25px;
     margin-top: 1.3px;
@@ -576,6 +594,51 @@ span {
     scale: 1.5;
 }
 
+.mid-buttons {
+    position: absolute;
+    top: 45px;
+    left: 21.5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 12px;
+    column-gap: 7px;
+}
+
+.s-btn {
+    height: 20px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.mid-buttons button:nth-child(3) {
+    grid-column: 5 / 6;
+}
+
+.mid-buttons button:nth-child(1) {
+    border-top-left-radius: 12px;
+}
+
+.mid-buttons button:nth-child(4) {
+    border-top-right-radius: 12px;
+}
+
+.mid-buttons button:nth-child(17) {
+    border-bottom-left-radius: 12px;
+}
+
+.mid-buttons button:nth-child(22) {
+    border-bottom-right-radius: 12px;
+}
+
+.mid-buttons button {
+    font-family: Typo Round;
+    font-size: 10px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
 
 
 
